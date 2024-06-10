@@ -1,0 +1,177 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+h2 {
+  color: #333;
+}
+
+.app {
+  padding: 2rem;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #0073e6;
+  padding: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #005bb5;
+}
+
+/* Search styles */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search input {
+  width: 80%;
+  max-width: 600px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.search input:focus {
+  border-color: #0073e6;
+}
+
+/* Book card styles */
+.book-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(100% / 3 - 2rem);
+  transition: box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #0073e6;
+}
+
+.book-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.book-card button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color: #005bb5;
+}
+
+/* Bookshelf styles */
+.bookshelf {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bookshelf ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bookshelf li {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.bookshelf li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bookshelf li h3 {
+  margin: 0;
+  color: #0073e6;
+}
+
+.bookshelf li p {
+  margin: 0;
+  color: #555;
+}
+
+.bookshelf button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bookshelf button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .search input {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .book-card {
+    width: 100%;
+  }
+}
